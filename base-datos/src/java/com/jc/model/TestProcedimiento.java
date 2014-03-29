@@ -1,30 +1,38 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package com.jc.model;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
 
-/**
- *
- * @author campitos
- */
+
 public class TestProcedimiento {
     public static void main(String args[])throws Exception{
         Conexion c=new Conexion();
         Connection con=c.conectarse();
-        CallableStatement callate=con.prepareCall("{call autenticar(?,?,?)}");
+        try{
+        CallableStatement callate2=con.prepareCall("{call insertar_usuario_1(?,?,?)}");
+        callate2.registerOutParameter(1,java.sql.Types.INTEGER);
+        callate2.setString(2,"Claudia");
+        callate2.setString(3,"123");
+      
+        callate2.execute();
+        int pk2=callate2.getInt(1);
+        System.out.println("El status de inserción es:"+pk2);
+        
+        
+        CallableStatement callate=con.prepareCall("{call autenticar_usuario_1(?,?,?)}");
         callate.registerOutParameter(1,java.sql.Types.INTEGER);
-        callate.setString(2,"juan");
-        callate.setString(3,"camps");
+        callate.setString(2,"Claudia");
+        callate.setString(3,"123");
       
         callate.execute();
         int pk=callate.getInt(1);
-        System.out.println("El id insertado es:"+pk);
-    }
+        System.out.println("El status de atenticación es:"+pk);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        
+        }
     
 }
