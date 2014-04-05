@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package com.jc.controladores;
 
 import com.jc.model.DAOUsuario;
@@ -17,10 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author campitos
- */
 public class ServletInsertarUsuario extends HttpServlet {
 
   
@@ -32,14 +22,14 @@ public class ServletInsertarUsuario extends HttpServlet {
         //Pedimos los valores
         
     int id=   Integer.parseInt(request.getParameter("id"));
-    String nombre=    request.getParameter("nombre");
-    float sueldo=    Float.parseFloat(request.getParameter("sueldo"));
+    String login=    request.getParameter("login");
+    String password=    request.getParameter(request.getParameter("password"));
     
     
     Usuario u=new Usuario();
     u.setId(id);
-    u.setNombre(nombre);
-    u.setSueldo(sueldo);
+    u.setLogin(login);
+    u.setPassword(password);
    
     DAOUsuario dao=new DAOUsuario();
         try {

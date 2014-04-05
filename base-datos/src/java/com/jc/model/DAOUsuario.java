@@ -5,7 +5,7 @@ package com.jc.model;
 import java.sql.*;
 import java.util.ArrayList;
 public class DAOUsuario {
-    Conexion con;
+    static Conexion con;
     
     public DAOUsuario(){
         con=new Conexion();
@@ -24,7 +24,7 @@ public class DAOUsuario {
     
  }
     
-    public ArrayList<Usuario> buscarTodos()throws Exception {
+    public static ArrayList<Usuario> buscarTodos()throws Exception {
         ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
         Connection conexion = con.conectarse(); //conectamos a la base de datos
         Statement st = conexion.createStatement();//Crear statement de sql
