@@ -23,7 +23,7 @@ public class TestTodo {
        
         ArrayList<Usuario> us= dao.buscarTodos();
         for(Usuario un:us){
-            System.out.println(un.getId()+"-"+un.getNombre()+"-"+un.getSueldo());
+            //System.out.println(un.getId()+"-"+un.getNombre()+"-"+un.getSueldo());
        
         }
         System.out.println("termino de leer "+us.size()+ " usuarios");
