@@ -26,7 +26,7 @@ public class ServletInsertarUsuario extends HttpServlet {
     String password=    request.getParameter(request.getParameter("password"));
     
     
-    Usuario u=new Usuario();
+    Usuario u=new Usuario(id,login,password);
     u.setId(id);
     u.setLogin(login);
     u.setPassword(password);
