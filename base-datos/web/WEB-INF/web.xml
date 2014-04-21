@@ -12,6 +12,10 @@
         <servlet-name>ServletBuscarUsuarios</servlet-name>
         <servlet-class>com.jc.controladores.ServletBuscarUsuarios</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Live</servlet-name>
+        <servlet-class>com.jc.controladores.ServletLive</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Algo</servlet-name>
         <url-pattern>/primero.xls</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>ServletBuscarUsuarios</servlet-name>
         <url-pattern>/usuarios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Live</servlet-name>
+        <url-pattern>/MusicLive</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

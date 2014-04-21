@@ -1,5 +1,3 @@
-
-
 package com.jc.model;
 
 import java.util.ArrayList;

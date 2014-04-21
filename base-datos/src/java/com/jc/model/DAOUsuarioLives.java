@@ -19,8 +19,7 @@ public void insertar(UsuarioLives u) throws Exception{
     CallableStatement callate=  cone.prepareCall("{call insertar_usuariolives(?,?,?)}");
    callate.setInt(1,u.getId());
    callate.setString(2,u.getNombre());
-   callate.setInt(4, u.getEdad());
-   callate.setString(3, u.getPassword());
+   callate.setString(3,u.getPassword());
    callate.executeUpdate();
    callate.close();
    cone.close();
