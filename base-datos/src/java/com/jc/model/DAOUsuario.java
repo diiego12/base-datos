@@ -1,9 +1,10 @@
-
 package com.jc.model;
 
 
 import java.sql.*;
 import java.util.ArrayList;
+
+
 public class DAOUsuario {
     static Conexion con;
     
