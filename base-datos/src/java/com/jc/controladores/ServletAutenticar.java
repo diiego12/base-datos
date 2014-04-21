@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package com.jc.controladores;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -32,6 +27,14 @@ public class ServletAutenticar extends HttpServlet {
           String pas=request.getParameter("password");
           out.println("Bienvenido "+name);
       
+          if(pas.equals("Datos Correctos")){
+          RequestDispatcher despachar = request.getRequestDispatcher("/Correcto.html");
+          despachar.forward(request, response);
+          }else{
+              request.setAttribute("valor", "Datos Incorrectos");
+              RequestDispatcher despachar = request.getRequestDispatcher("/Incorrecto.hmtl");
+          despachar.forward(request, response);
+          }
     }
 }
         
