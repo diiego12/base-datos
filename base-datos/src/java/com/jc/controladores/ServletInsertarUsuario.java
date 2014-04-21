@@ -1,7 +1,7 @@
 package com.jc.controladores;
 
-import com.jc.model.DAOUsuario;
-import com.jc.model.Usuario;
+import com.jc.model.DAOUsuarioLives;
+import com.jc.model.UsuarioLives;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.logging.Level;
@@ -21,23 +21,25 @@ public class ServletInsertarUsuario extends HttpServlet {
         String mensaje="no insertado";
         //Pedimos los valores
         
-    int id=   Integer.parseInt(request.getParameter("id"));
-    String login=    request.getParameter("login");
-    String password=    request.getParameter(request.getParameter("password"));
+    int id =   Integer.parseInt(request.getParameter("id"));
+    String nombre =    request.getParameter("nombre");
+    int edad = Integer.parseInt(request.getParameter("edad"));
+    String password =    request.getParameter(request.getParameter("password"));
     
     
-    Usuario u=new Usuario(id,login,password);
+    UsuarioLives u = new UsuarioLives(id,nombre, edad, password);
     u.setId(id);
-    u.setLogin(login);
+    u.setNombre(nombre);
+    u.setEdad(edad);
     u.setPassword(password);
    
-    DAOUsuario dao=new DAOUsuario();
+    DAOUsuarioLives dao = new DAOUsuarioLives();
         try {
             dao.insertar(u);
-            mensaje="Tu usuario se guardo con exito :)";
+            mensaje="Usuario Guardado";
         } catch (Exception ex) {
-   mensaje=ex.getMessage();
+                mensaje=ex.getMessage();
         }
-              out.println(mensaje);    
+                out.println(mensaje);    
     }
 }

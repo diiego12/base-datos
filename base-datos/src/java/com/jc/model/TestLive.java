@@ -6,7 +6,7 @@ import java.sql.*;
 
 public class TestLive {
     public static void main(String args[])throws Exception{
-        Conexion c=new Conexion();
+        ConectLive c=new ConectLive();
         Connection con=c.conectarse();
 
     }    
