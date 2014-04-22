@@ -38,7 +38,7 @@
 <body>
 
 
-    <div data-role="page" id="Inicio" data-theme="c">
+    <div data-role="page" id="Inicio">
  
   <div data-role="header">
     		<h1>Lives & Levels Music</h1>
@@ -148,13 +148,13 @@
   										
                         <div data-role="content">
  		<ul data-role="listview">
-            <li><a href="#"><img src="" width="60" height="60">
-                    Agregar Usuario(s) [system(s)].
+            <li><a href="#agrMusc"><img src="" width="60" height="60">
+                    Agregar titulo musical.
                     <p>Solo Administrador.</p>
                 </a>
             </li>
-            <li><a href="#"><img src="" width="60" height="60">
-                    Agregar titulo musical.
+            <li><a href="#agrUsu"><img src="" width="60" height="60">
+                    Agregar Usuario(s) [system(s)].
                     <p>Solo Administrador.</p>
                 </a>
             </li>
@@ -189,6 +189,49 @@
   			</div>
 
 </div>// div admin
+
+
+<div data-role="page" id="agrMusc">
+ 
+  <div data-role="header">
+    		<h1>Lives & Levels Music</h1>
+  		<a href="#insert" data-role="button" data-icon="back">Regresar</a> 
+  		</div>
+    
+  
+  			<div data-role="content">
+  		
+  
+                	</div>
+  
+                 
+                <div data-role="footer" data-position="fixed">
+                <h4>Copyright �</h4>
+                </div>
+
+
+</div>//div agregar musica
+
+<div data-role="page" id="agrUsu">
+ 
+  <div data-role="header">
+    		<h1>Lives & Levels Music</h1>
+  		<a href="#insert" data-role="button" data-icon="back">Regresar</a> 
+  		</div>
+    
+  
+  			<div data-role="content">
+  		
+  
+                	</div>
+  
+                 
+                <div data-role="footer" data-position="fixed">
+                <h4>Copyright �</h4>
+                </div>
+
+
+</div>//div agregar usuario
 
 
 
