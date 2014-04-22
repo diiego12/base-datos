@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>jQuery Mobile Web App</title>
+<title>LL Music</title>
 <link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
@@ -70,7 +70,7 @@
   
                  
                 <div data-role="footer" data-position="fixed">
-                <h4>Copyright ï¿½</h4>
+                <h4>Copyright ©</h4>
                 </div>
 
 
@@ -112,7 +112,7 @@
         </div>
   
         <div data-role="footer" data-position="fixed">
-    	<h4>Copyright ï¿½</h4>
+    	<h4>Copyright ©</h4>
   	</div>
 																		
 </div>//div usuario
@@ -136,7 +136,7 @@
   
     
   			<div data-role="footer" data-position="fixed">
-			<h4>Copyright ï¿½</h4>
+			<h4>Copyright ©</h4>
   			</div>
 
 </div>// div busqueda
@@ -174,7 +174,7 @@
   
     
                         <div data-role="footer" data-position="fixed">
-			<h4>Copyright ï¿½</h4>
+			<h4>Copyright ©</h4>
   			</div>
 
 </div>// div insertar
@@ -195,7 +195,7 @@
   
   
   			<div data-role="footer" data-position="fixed">
-			<h4>Copyright ï¿½</h4>
+			<h4>Copyright ©</h4>
   			</div>
 
 </div>// div admin
@@ -211,12 +211,48 @@
   
   			<div data-role="content">
   		
-  
+                            <p>ID:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="id_disc" id="id_disc" value="" />        	
+                            </div>
+                            
+                            <p>Titulo:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="titulo" id="titulo" value="" />        	
+                            </div>
+                            
+                            <p>Genero:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="genero" id="genero" value="" />        	
+                            </div>
+                            
+                            <p>Nombre de la Banda:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="nomb_band" id="nomb_band" value="" />        	
+                            </div>   
+                            
+                            <p>Año:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="year" id="year" value="" />        	
+                            </div>
+                            
+                            <p>Autor:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="autor" id="autor" value="" />        	
+                            </div>
+                            
+                            <p>Precio:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="precio" id="precio" value="" />        	
+                            </div>                            
+                            <br>
+                            <br>
+                            <a href="" data-role="button" type="submmit">Ingresar a la Base de Datos</a> 
                 	</div>
   
                  
                 <div data-role="footer" data-position="fixed">
-                <h4>Copyright ï¿½</h4>
+                <h4>Copyright ©</h4>
                 </div>
 
 
@@ -231,13 +267,31 @@
     
   
   			<div data-role="content">
-  		
+                            <p>ID:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="id_us" id="id_us" value="" />        	
+                            </div>
+                            
+                            <p>Nombre:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="nomb_us" id="nomb_us" value="" />        	
+                            </div>
+                            
+                            <p>Edad:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="edad_us" id="edad_us" value="" />        	
+                            </div>
+                            
+                            <p>Contraseña:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="contra_us" id="contra_us" value="" />        	
+                            </div>                            
   
                 	</div>
   
                  
                 <div data-role="footer" data-position="fixed">
-                <h4>Copyright ï¿½</h4>
+                <h4>Copyright ©</h4>
                 </div>
 
 
