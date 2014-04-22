@@ -122,7 +122,7 @@
     
     
            		<div data-role="content">
- 			puto
+ 			
   			</div>
   
     
@@ -144,7 +144,7 @@
   
   										
                         <div data-role="content">
- 			puto2
+ 		
   			</div>
   
     
@@ -165,7 +165,7 @@
   
     
                         <div data-role="content">
- 			puto3
+ 			
   			</div>
   
   
