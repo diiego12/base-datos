@@ -122,7 +122,10 @@
     
     
            		<div data-role="content">
- 			
+                            <p>Ingresa tu busqueda:</p>
+                            <div data-role="fieldcontain">
+        	                 <input type="text" name="busqmus" id="busqmus" value="" />        	
+                            </div>
   			</div>
   
     
