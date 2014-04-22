@@ -17,7 +17,7 @@
                 
                 data:{
                     usuario:$().val(),
-                    contraseña:$().val()
+                    contraseï¿½a:$().val()
                 },
                 succes:function(){
                         $("#resultado").html(datos)
@@ -55,9 +55,9 @@
   		<div data-role="fieldcontain">
   		<input type="text" name="usuario" id="usuario" value="" />
     		</div>
-  		<p>Contraseña:<p>
+  		<p>Contraseï¿½a:<p>
         	<div data-role="fieldcontain">
-        	<input type="password" name="contraseña" id="contraseña" value="" />
+        	<input type="password" name="contraseï¿½a" id="contraseï¿½a" value="" />
         	</div>
                 <br>
                 <a id="login" href="#Usuario" data-role="button" type="submit" >Login</a>
@@ -70,7 +70,7 @@
   
                  
                 <div data-role="footer" data-position="fixed">
-                <h4>Copyright ©</h4>
+                <h4>Copyright ï¿½</h4>
                 </div>
 
 
@@ -89,7 +89,7 @@
 	<ul data-role="listview">
             <li><a href="#busqueda"><img src="Vynil-256.png" width="60" height="60">
                     Busqueda
-                    <p>Archivos de música, titulos y más.</p>
+                    <p>Archivos de mï¿½sica, titulos y mï¿½s.</p>
                 </a>
             </li>
             <li><a href="#insert"><img src="Data-256.png" width="60" height="60">
@@ -98,7 +98,7 @@
                 </a>
             </li>
             <li><a href="#admin"><img src="Settings-256.png" width="60" height="60">
-                    Administración
+                    Administraciï¿½n
                     <p>De usuarios (system's).</p>
                 </a>
             </li>
@@ -106,7 +106,7 @@
         </div>
   
         <div data-role="footer" data-position="fixed">
-    	<h4>Copyright ©</h4>
+    	<h4>Copyright ï¿½</h4>
   	</div>
 																		
 </div>//div usuario
@@ -124,13 +124,13 @@
            		<div data-role="content">
                             <p>Ingresa tu busqueda:</p>
                             <div data-role="fieldcontain">
-        	                 <input type="text" name="busqmus" id="busqmus" value="" />        	
+        	                 <input type="text" name="busquedamus" id="busquedamus" value="" />        	
                             </div>
   			</div>
   
     
   			<div data-role="footer" data-position="fixed">
-			<h4>Copyright ©</h4>
+			<h4>Copyright ï¿½</h4>
   			</div>
 
 </div>// div busqueda
@@ -147,12 +147,24 @@
   
   										
                         <div data-role="content">
- 		
+ 		<ul data-role="listview">
+            <li><a href="#"><img src="" width="60" height="60">
+                    Agregar Usuario(s) [system(s)].
+                    <p>Solo Administrador.</p>
+                </a>
+            </li>
+            <li><a href="#"><img src="" width="60" height="60">
+                    Agregar titulo musical.
+                    <p>Solo Administrador.</p>
+                </a>
+            </li>
+            
+        </ul>
   			</div>
   
     
                         <div data-role="footer" data-position="fixed">
-			<h4>Copyright ©</h4>
+			<h4>Copyright ï¿½</h4>
   			</div>
 
 </div>// div insertar
@@ -173,7 +185,7 @@
   
   
   			<div data-role="footer" data-position="fixed">
-			<h4>Copyright ©</h4>
+			<h4>Copyright ï¿½</h4>
   			</div>
 
 </div>// div admin
