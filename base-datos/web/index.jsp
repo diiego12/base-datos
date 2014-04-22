@@ -49,7 +49,8 @@
   <div data-role="content">
   		<center><h1>BIENVENIDO</h1></center><br>
   		<h2>Inicio se Sesión</h2>
-  		<h4>Usuario:</h4>
+                <form action="autenticar"  method="post">
+                <h4>Usuario:</h4>
   		<div data-role="fieldcontain">
   		<input type="text" name="usuario" id="usuario" value="" />
     		</div>
@@ -60,9 +61,13 @@
                 <br>
         	<a id="login" data-role="button" data-icon="star" >Login</a>
                 <div id="resultado"></div>
-                </div>
+                
+                  </form>
+                ${valor}
+  </div>
   
    
+                
                 <div data-role="footer" data-position="fixed">
                 <h4>Copyright ©</h4>
                 </div>
