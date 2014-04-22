@@ -38,36 +38,37 @@
 <body>
 
 
-<div data-role="page" id="Inicio">
+    <div data-role="page" id="Inicio" data-theme="c">
  
   <div data-role="header">
-    		<h1>Level's Music</h1>
+    		<h1>Lives & Levels Music</h1>
   		<a href="#Inicio" data-role="button" data-icon="home">Inicio</a> 
   		</div>
     
   
   <div data-role="content">
   		<center><h1>BIENVENIDO</h1></center><br>
-  		<h2>Inicio se Sesión</h2>
-                <form action="autenticar"  method="post">
-                <h4>Usuario:</h4>
+                <center><img src="ll-logo.png" width="120" height="160"></center>
+                <br>
+  		<form action="autenticar"  method="post">
+                <p>Usuario:<p>
   		<div data-role="fieldcontain">
   		<input type="text" name="usuario" id="usuario" value="" />
     		</div>
-  		<h4>Contraseña:</h4>
+  		<p>Contraseña:<p>
         	<div data-role="fieldcontain">
         	<input type="password" name="contraseña" id="contraseña" value="" />
         	</div>
                 <br>
-        	<a id="login" data-role="button" data-icon="star" >Login</a>
-                <div id="resultado"></div>
+                <a id="login" href="#Usuario" data-role="button" type="submit" >Login</a>
+                
                 
                   </form>
                 ${valor}
-  </div>
   
-   
-                
+                </div>
+  
+                 
                 <div data-role="footer" data-position="fixed">
                 <h4>Copyright ©</h4>
                 </div>
@@ -78,7 +79,7 @@
     <div data-role="page" id="Usuario">
   						
         <div data-role="header">
-        <h1>Level's Music</h1>
+        <h1>Lives & Levels Music</h1>
         <a href="#Inicio" data-role="button" data-icon="home">Inicio</a> 
         </div>
         <br>
@@ -86,9 +87,21 @@
 	
         <div data-role="content">
 	<ul data-role="listview">
-	<li><a href="#busqueda">Busqueda</a></li>
-	<li><a href="#insert">Insertar</a></li>
-	<li><a href="#admin">Administración</a></li>
+            <li><a href="#busqueda"><img src="Vynil-256.png" width="60" height="60">
+                    Busqueda
+                    <p>Archivos de música, titulos y más.</p>
+                </a>
+            </li>
+            <li><a href="#insert"><img src="Data-256.png" width="60" height="60">
+                    Insertar
+                    <p>Nuevos registros de usuarios y musicales.</p>
+                </a>
+            </li>
+            <li><a href="#admin"><img src="Settings-256.png" width="60" height="60">
+                    Administración
+                    <p>De usuarios (system's).</p>
+                </a>
+            </li>
         </ul>
         </div>
   
@@ -104,7 +117,7 @@
   
   			<div data-role="header">
     			<a href="#Usuario" data-role="button" data-icon="back">Regresar</a> 
-    			<h1>Level's Music</h1>
+    			<h1>Lives & Levels Music</h1>
   			</div>
     
     
@@ -126,7 +139,7 @@
   
   			<div data-role="header">
     			<a href="#Usuario" data-role="button" data-icon="back">Regresar</a> 
-    			<h1>Level's Music</h1>
+    			<h1>Lives & Levels Music</h1>
   			</div>
   
   										
@@ -147,7 +160,7 @@
   
   			<div data-role="header">
     			<a href="#Usuario" data-role="button" data-icon="back">Regresar</a> 
-    			<h1>Level's Music</h1>
+    			<h1>Lives & Levels Music</h1>
   			</div>
   
     

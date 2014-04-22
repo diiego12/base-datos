@@ -23,7 +23,7 @@ public class ServletAutenticar extends HttpServlet {
           String pas=request.getParameter("contraseña");
           out.println("Bienvenido "+name);
       
-          if(pas.equals("Datos Correctos")){
+          if(pas.equals("hola")){
           RequestDispatcher despachar = request.getRequestDispatcher("Correcto.html");
           despachar.forward(request, response);
           }else{
