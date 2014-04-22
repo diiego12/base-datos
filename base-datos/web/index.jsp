@@ -17,7 +17,7 @@
                 
                 data:{
                     usuario:$().val(),
-                    contraseï¿½a:$().val()
+                    contraseña:$().val()
                 },
                 succes:function(){
                         $("#resultado").html(datos)
@@ -55,9 +55,9 @@
   		<div data-role="fieldcontain">
   		<input type="text" name="usuario" id="usuario" value="" />
     		</div>
-  		<p>Contraseï¿½a:<p>
+  		<p>Contraseña:<p>
         	<div data-role="fieldcontain">
-        	<input type="password" name="contraseï¿½a" id="contraseï¿½a" value="" />
+        	<input type="password" name="contraseï¿½a" id="contraseña" value="" />
         	</div>
                 <br>
                 <a id="login" href="#Usuario" data-role="button" type="submit" >Login</a>
@@ -87,18 +87,24 @@
 	
         <div data-role="content">
 	<ul data-role="listview">
-            <li><a href="#busqueda"><img src="Vynil-256.png" width="60" height="60">
+            <li><a href="#busqueda"><img src="Search-256.png" width="60" height="60">
                     Busqueda
-                    <p>Archivos de mï¿½sica, titulos y mï¿½s.</p>
+                    <br>
+                    <br>
+                    <p>Archivos de música, titulos y más.</p>
                 </a>
             </li>
             <li><a href="#insert"><img src="Data-256.png" width="60" height="60">
                     Insertar
+                    <br>
+                    <br>
                     <p>Nuevos registros de usuarios y musicales.</p>
                 </a>
             </li>
             <li><a href="#admin"><img src="Settings-256.png" width="60" height="60">
-                    Administraciï¿½n
+                    Administración
+                    <br>
+                    <br>
                     <p>De usuarios (system's).</p>
                 </a>
             </li>
@@ -148,13 +154,17 @@
   										
                         <div data-role="content">
  		<ul data-role="listview">
-            <li><a href="#agrMusc"><img src="" width="60" height="60">
+                    <li><a href="#agrMusc"><img src="Vynil-256.png" width="60" height="60">
                     Agregar titulo musical.
+                    <br>
+                    <br>
                     <p>Solo Administrador.</p>
                 </a>
             </li>
-            <li><a href="#agrUsu"><img src="" width="60" height="60">
+            <li><a href="#agrUsu"><img src="Note-256.png" width="60" height="60">
                     Agregar Usuario(s) [system(s)].
+                    <br>
+                    <br>
                     <p>Solo Administrador.</p>
                 </a>
             </li>
