@@ -12,6 +12,10 @@
         <servlet-name>Live</servlet-name>
         <servlet-class>com.jc.controladores.ServletLive</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>InsLL</servlet-name>
+        <servlet-class>com.jc.controladores.ServletInsertarTituloMusical</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletAutenticar</servlet-name>
         <url-pattern>/autenticar</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>Live</servlet-name>
         <url-pattern>/MusicLive</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsLL</servlet-name>
+        <url-pattern>/InsertLive</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
