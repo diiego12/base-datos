@@ -12,16 +12,7 @@ public class TituloMusical {
     private int Año;
     private String Autor;
     private float Precio;
-
-    public TituloMusical(int ID, String Titulo, String Genero, String Nomb_banda, int Año, String Autor, float Precio) {
-        this.ID = ID;
-        this.Titulo = Titulo;
-        this.Genero = Genero;
-        this.Nomb_banda = Nomb_banda;
-        this.Año = Año;
-        this.Autor = Autor;
-        this.Precio = Precio;
-    }
+ 
 
     public int getID() {
         return ID;
@@ -79,5 +70,13 @@ public class TituloMusical {
         this.Precio = Precio;
     }
 
-        
+        public TituloMusical(int ID, String Titulo, String Genero, String Nomb_banda, int Año, String Autor, float Precio) {
+        this.ID = ID;
+        this.Titulo = Titulo;
+        this.Genero = Genero;
+        this.Nomb_banda = Nomb_banda;
+        this.Año = Año;
+        this.Autor = Autor;
+        this.Precio = Precio;
+    }
 }

@@ -1,31 +1,32 @@
 package com.jc.controladores;
 
-
-import com.jc.model.DAOUsuarioLives;
-import com.jc.model.UsuarioLives;
+import com.jc.model.DAOTitMusLL;
+import com.jc.model.TituloMusical;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-public class ServletBuscarUsuarios extends HttpServlet {
+/**
+ *
+ * @author DiiegOO
+ */
+public class ServletBuscarMusica extends HttpServlet {
 
     
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        try {
-            for (UsuarioLives u: DAOUsuarioLives.buscarTodos()){
-                out.println(u.getNombre());
+
+     try {
+            for (TituloMusical u: DAOTitMusLL.buscarDiscos()){
+                out.println(u.getTitulo());
             }
         } catch (Exception ex) {  }
-            
-        
+ 
     }
-}
+    
+ }

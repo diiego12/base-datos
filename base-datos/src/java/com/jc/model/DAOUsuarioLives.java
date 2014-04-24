@@ -26,6 +26,33 @@ public void insertar(UsuarioLives u) throws Exception{
    
    
    System.out.println("Usuario Ingresado con Exito");
-} 
+   
     
+
+    } 
+    
+
+public static ArrayList<UsuarioLives> buscarTodos()throws Exception {
+        ArrayList<UsuarioLives> usuariosl = new ArrayList<UsuarioLives>();
+        Connection conexion = con.conectarse(); 
+        Statement st = conexion.createStatement();
+        ResultSet res = st.executeQuery("SELECT * FROM usuario_lives");
+        
+        
+        while (res.next()){
+            
+            int id = res.getInt(1);
+            String nombre = res.getString(2);
+            int edad = res.getInt(3);
+            String password = res.getString(4);
+            UsuarioLives usl = new UsuarioLives(id, nombre, edad, password);
+            usuariosl.add(usl);
+                
+          
+            }
+            
+        return usuariosl;
+        
+    }
 }
+

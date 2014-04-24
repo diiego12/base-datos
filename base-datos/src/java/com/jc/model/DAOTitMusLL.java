@@ -30,5 +30,30 @@ public class DAOTitMusLL {
    
    
    System.out.println("Registro de musica ingresado");
-} 
+
+    }
+    
+    public static ArrayList<TituloMusical> buscarDiscos()throws Exception {
+        ArrayList<TituloMusical> registros = new ArrayList<TituloMusical>();
+        Connection conexion = con.conectarse(); 
+        Statement st = conexion.createStatement();
+        ResultSet res = st.executeQuery("SELECT * FROM Discos");
+        
+        
+        while (res.next()){
+            
+            int ID = res.getInt(1);
+            String Titulo = res.getString(2);
+            String  Genero= res.getString(3);
+            String  Nomb_banda= res.getString(4);
+            int Año= res.getInt(5);
+            String  Autor= res.getString(6);
+            float Precio= res.getFloat(7);
+             TituloMusical tm = new TituloMusical(ID, Titulo, Genero, Nomb_banda, Año, Autor, Precio);
+            registros.add(tm);
+                    
+        }
+            
+    return registros;
+    }
 }
