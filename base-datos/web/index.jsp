@@ -57,7 +57,7 @@
     		</div>
   		<p>Contraseña:<p>
         	<div data-role="fieldcontain">
-        	<input type="password" name="contraseï¿½a" id="contraseña" value="" />
+        	<input type="password" name="contraseña" id="contraseña" value="" />
         	</div>
                 <br>
                 <a id="login" href="#Usuario" data-role="button" type="submit" >Login</a>
@@ -128,10 +128,13 @@
     
     
            		<div data-role="content">
+                            <form action="BusqMusic"  method="post">
                             <p>Ingresa tu busqueda:</p>
                             <div data-role="fieldcontain">
         	                 <input type="text" name="busquedamus" id="busquedamus" value="" />        	
                             </div>
+                            <a id="bsqmus" href="" data-role="button" type="submit" >Buscar</a>
+                            </form>
   			</div>
   
     
@@ -210,7 +213,7 @@
     
   
   			<div data-role="content">
-  		
+                            <form action="InsertLive"  method="post">
                             <p>ID:</p>
                             <div data-role="fieldcontain">
         	                 <input type="text" name="id_disc" id="id_disc" value="" />        	
@@ -244,10 +247,12 @@
                             <p>Precio:</p>
                             <div data-role="fieldcontain">
         	                 <input type="text" name="precio" id="precio" value="" />        	
+                            
                             </div>                            
+                            </form>
                             <br>
                             <br>
-                            <a href="" data-role="button" type="submmit">Ingresar a la Base de Datos</a> 
+                            <a id="insertlive" href="" data-role="button" type="submmit">Ingresar a la Base de Datos</a> 
                 	</div>
   
                  
@@ -265,7 +270,7 @@
   		<a href="#insert" data-role="button" data-icon="back">Regresar</a> 
   		</div>
     
-  
+                        <form action="insertUS"  method="post">
   			<div data-role="content">
                             <p>ID:</p>
                             <div data-role="fieldcontain">
@@ -288,7 +293,8 @@
                             </div>                            
   
                 	</div>
-  
+                        </form>
+    <a id="" href="" data-role="button" type="submit">Ingresar Usuario</a>
                  
                 <div data-role="footer" data-position="fixed">
                 <h4>Copyright ©</h4>
